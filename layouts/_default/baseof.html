@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P8LVBRF6');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{ .Site.Title }} | {{ .Title }}</title>
@@ -40,14 +47,16 @@
   {{ end }}
 </head>
 <body id="page-top">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8LVBRF6"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   {{ partial "nav.html" . }}
   <div class="container-fluid p-0">
     {{ block "main" . }}
       {{ .Content }}
     {{ end }}
-<!--    <section><span style="color: #999999;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>-->
-<!--      {{ with $.GitInfo }}{{ with $.Site.Params.gitCommitPrefix }} | <span style="color: #999999;;">Page content generated from commit: <a href="{{ . }}/{{ $.GitInfo.AbbreviatedHash }}" title="log: {{ $.GitInfo.Subject }}">{{ $.GitInfo.AbbreviatedHash }}</a>{{ end }}{{end}}-->
-<!--    </section>-->
+<!--c-->
   </div>
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
